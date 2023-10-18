@@ -16,7 +16,7 @@ spec:
         spec:
             containers:
                 - name: app
-                  image: frallan97/GitOps-Demo-App:{{ .Values.env.APP_VERSION }}
+                  image: frallan97/app-helm:{{ .Values.env.APP_VERSION }}
                   ports:
                     - containerPort: 3000
                   env:
